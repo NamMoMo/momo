@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2025년 인기 PC 추천 사이트</title>
+  <!-- Noto Sans KR 폰트 적용 -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+  <style>
+    /* 기본 스타일 초기화 */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Noto Sans KR', sans-serif;
+      background-color: #f4f8fc;
+      color: #333;
+    }
+    header {
+      background-color: #007BFF;
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+    }
+    header h1 {
+      font-size: 2em;
+    }
+    .filter-buttons {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .filter-buttons button {
+      background-color: #007BFF;
+      border: none;
+      color: #fff;
+      padding: 10px 20px;
+      margin: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .filter-buttons button:hover {
+      background-color: #0056b3;
+    }
+    .cards-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+    .card {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 20px;
+      width: 300px;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card h3 {
+      margin-bottom: 10px;
+      color: #007BFF;
+    }
+    .card p {
+      margin-bottom: 8px;
+      line-height: 1.5;
+    }
+    .card .price {
+      font-weight: bold;
+      margin-top: 10px;
+      color: #007BFF;
+    }
+    @media (max-width: 768px) {
+      .card {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>2025년 인기 PC 추천 사이트</h1>
+  </header>
+
+  <!-- 필터 버튼 섹션 -->
+  <div class="filter-buttons">
+    <button data-filter="all">전체</button>
+    <button data-filter="고성능 게임">고성능 게임</button>
+    <button data-filter="일반 게임">일반 게임</button>
+    <button data-filter="워크스테이션">워크스테이션</button>
+    <button data-filter="사무용">사무용</button>
+  </div>
+
+  <!-- 카드 컨테이너 -->
+  <div class="cards-container">
+    <!-- Card 1: 고사양 게이밍 PC -->
+    <div class="card" data-category="고성능 게임">
+      <h3>고사양 게이밍 PC</h3>
+      <p><strong>CPU:</strong> AMD 라이젠 7 7800X3D (예상: ₩600,000)</p>
+      <p><strong>메인보드:</strong> MSI MAG B650 토마호크 WIFI (예상: ₩250,000)</p>
+      <p><strong>그래픽카드:</strong> NVIDIA RTX 4070 SUPER (예상: ₩900,000)</p>
+      <p><strong>메모리:</strong> 16GB DDR5 (예상: ₩150,000)</p>
+      <p><strong>스토리지:</strong> 1TB NVMe SSD (예상: ₩150,000)</p>
+      <p><strong>용도:</strong> 고성능 게임</p>
+      <p class="price"><strong>총 예상 비용:</strong> 약 ₩2,050,000</p>
+    </div>
+
+    <!-- Card 2: 일반 게이밍 PC (AMD 기반) -->
+    <div class="card" data-category="일반 게임">
+      <h3>일반 게이밍 PC (AMD 기반)</h3>
+      <p><strong>CPU:</strong> AMD 라이젠 5 7500F (예상: ₩300,000)</p>
+      <p><strong>메인보드:</strong> ASUS TUF B650M-PLUS (예상: ₩200,000)</p>
+      <p><strong>그래픽카드:</strong> AMD 라데온 RX 7700 XT (예상: ₩700,000)</p>
+      <p><strong>메모리:</strong> 16GB DDR5 (예상: ₩150,000)</p>
+      <p><strong>스토리지:</strong> 500GB NVMe SSD (예상: ₩100,000)</p>
+      <p><strong>용도:</strong> 일반 게임</p>
+      <p class="price"><strong>총 예상 비용:</strong> 약 ₩1,450,000</p>
+    </div>
+
+    <!-- Card 3: 일반 게이밍 PC (인텔 기반) -->
+    <div class="card" data-category="일반 게임">
+      <h3>일반 게이밍 PC (인텔 기반)</h3>
+      <p><strong>CPU:</strong> 인텔 코어 i5-12400F (예상: ₩250,000)</p>
+      <p><strong>메인보드:</strong> MSI PRO B660M-A WIFI (예상: ₩180,000)</p>
+      <p><strong>그래픽카드:</strong> AMD 라데온 RX 7700 XT (예상: ₩700,000)</p>
+      <p><strong>메모리:</strong> 16GB DDR4 (예상: ₩100,000)</p>
+      <p><strong>스토리지:</strong> 500GB NVMe SSD (예상: ₩100,000)</p>
+      <p><strong>용도:</strong> 일반 게임</p>
+      <p class="price"><strong>총 예상 비용:</strong> 약 ₩1,330,000</p>
+    </div>
+
+    <!-- Card 4: 고급 게이밍 PC (AMD 기반) -->
+    <div class="card" data-category="고성능 게임">
+      <h3>고급 게이밍 PC (AMD 기반)</h3>
+      <p><strong>CPU:</strong> AMD 라이젠 7 7800X3D (예상: ₩600,000)</p>
+      <p><strong>메인보드:</strong> ASUS ROG STRIX B650-E GAMING WIFI (예상: ₩350,000)</p>
+      <p><strong>그래픽카드:</strong> NVIDIA RTX 4070 SUPER (예상: ₩900,000)</p>
+      <p><strong>메모리:</strong> 32GB DDR5 (예상: ₩300,000)</p>
+      <p><strong>스토리지:</strong> 1TB NVMe SSD (예상: ₩150,000)</p>
+      <p><strong>용도:</strong> 고성능 게임</p>
+      <p class="price"><strong>총 예상 비용:</strong> 약 ₩2,300,000</p>
+    </div>
+
+    <!-- Card 5: 고급 게이밍 PC (인텔 기반) -->
+    <div class="card" data-category="고성능 게임">
+      <h3>고급 게이밍 PC (인텔 기반)</h3>
+      <p><strong>CPU:</strong> 인텔 코어 i5-14500 (예상: ₩350,000)</p>
+      <p><strong>메인보드:</strong> MSI MAG B760 토마호크 WIFI (예상: ₩250,000)</p>
+      <p><strong>그래픽카드:</strong> NVIDIA RTX 4070 SUPER (예상: ₩900,000)</p>
+      <p><strong>메모리:</strong> 32GB DDR5 (예상: ₩300,000)</p>
+      <p><strong>스토리지:</strong> 1TB NVMe SSD (예상: ₩150,000)</p>
+      <p><strong>용도:</strong> 고성능 게임</p>
+      <p class="price"><strong>총 예상 비용:</strong> 약 ₩1,950,000</p>
+    </div>
+
+    <!-- Card 6: 최상급 게이밍 PC (AMD 기반) -->
+    <div class="card" data-category="고성능 게임">
+      <h3>최상급 게이밍 PC (AMD 기반)</h3>
+      <p><strong>CPU:</strong> AMD 라이젠 9 9700X (예상: ₩570,000)</p>
+      <p><strong>메인보드:</strong> ASUS ROG CROSSHAIR X670E HERO (예상: ₩800,000)</p>
+      <p><strong>그래픽카드:</strong> NVIDIA RTX 4070 Ti SUPER (예상: ₩1,200,000)</p>
+      <p><strong>메모리:</strong> 32GB DDR5 (예상: ₩300,000)</p>
+      <p><strong>스토리지:</strong> 2TB NVMe SSD (예상: ₩300,000)</p>
+      <p><strong>용도:</strong> 고성능 게임</p>
+      <p class="price"><strong>총 예상 비용:</strong> 약 ₩3,170,000</p>
+    </div>
+
+    <!-- Card 7: 최상급 게이밍 PC (인텔 기반) -->
+    <div class="card" data-category="고성능 게임">
+      <h3>최상급 게이밍 PC (인텔 기반)</h3>
+      <p><strong>CPU:</strong> 인텔 코어 i5-14600KF (예상: ₩400,000)</p>
+      <p><strong>메인보드:</strong> MSI MAG B760 토마호크 WIFI (예상: ₩250,000)</p>
+      <p><strong>그래픽카드:</strong> NVIDIA RTX 4070 Ti SUPER (예상: ₩1,200,000)</p>
+      <p><strong>메모리:</strong> 32GB DDR5 (예상: ₩300,000)</p>
+      <p><strong>스토리지:</strong> 2TB NVMe SSD (예상: ₩300,000)</p>
+      <p><strong>용도:</strong> 고성능 게임</p>
+      <p class="price"><strong>총 예상 비용:</strong> 약 ₩2,450,000</p>
+    </div>
+
+    <!-- Card 8: 하이엔드 워크스테이션 (AMD 기반) -->
+    <div class="card" data-category="워크스테이션">
+      <h3>하이엔드 워크스테이션 (AMD 기반)</h3>
+      <p><strong>CPU:</strong> AMD 라이젠 9 9950X (예상: ₩850,000)</p>
+      <p><strong>메인보드:</strong> MSI MAG X670E 토마호크 WIFI (예상: ₩400,000)</p>
+      <p><strong>그래픽카드:</strong> NVIDIA RTX 4080 SUPER (예상: ₩1,500,000)</p>
+      <p><strong>메모리:</strong> 64GB DDR5 (예상: ₩600,000)</p>
+      <p><strong>스토리지:</strong> 2TB NVMe SSD (예상: ₩300,000)</p>
+      <p><strong>용도:</strong> 워크스테이션</p>
+      <p class="price"><strong>총 예상 비용:</strong> 약 ₩3,650,000</p>
+    </div>
+
+    <!-- Card 9: 하이엔드 워크스테이션 (인텔 기반) -->
+    <div class="card" data-category="워크스테이션">
+      <h3>하이엔드 워크스테이션 (인텔 기반)</h3>
+      <p><strong>CPU:</strong> 인텔 코어 i7-14700KF (예상: ₩600,000)</p>
+      <p><strong>메인보드:</strong> MSI MAG Z790 토마호크 맥스 WIFI (예상: ₩500,000)</p>
+      <p><strong>그래픽카드:</strong> NVIDIA RTX 4080 SUPER (예상: ₩1,500,000)</p>
+      <p><strong>메모리:</strong> 64GB DDR5 (예상: ₩600,000)</p>
+      <p><strong>스토리지:</strong> 2TB NVMe SSD (예상: ₩300,000)</p>
+      <p><strong>용도:</strong> 워크스테이션</p>
+      <p class="price"><strong>총 예상 비용:</strong> 약 ₩3,500,000</p>
+    </div>
+
+    <!-- Card 10: 가성비 사무용 PC -->
+    <div class="card" data-category="사무용">
+      <h3>가성비 사무용 PC</h3>
+      <p><strong>CPU:</strong> AMD 라이젠 5 5600G (예상: ₩150,000)</p>
+      <p><strong>메인보드:</strong> ASUS PRIME B450M-A II (예상: ₩90,000)</p>
+      <p><strong>그래픽카드:</strong> 내장 그래픽 (Radeon Vega)</p>
+      <p><strong>메모리:</strong> 16GB DDR4 (예상: ₩60,000)</p>
+      <p><strong>스토리지:</strong> 500GB SSD (예상: ₩70,000)</p>
+      <p><strong>용도:</strong> 사무용</p>
+      <p class="price"><strong>총 예상 비용:</strong> 약 ₩370,000</p>
+    </div>
+  </div>
+
+  <!-- 최소한의 자바스크립트를 사용한 필터 기능 -->
+  <script>
+    const buttons = document.querySelectorAll('.filter-buttons button');
+    const cards = document.querySelectorAll('.card');
+
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+        const filter = button.getAttribute('data-filter');
+        cards.forEach(card => {
+          if(filter === 'all' || card.getAttribute('data-category') === filter){
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
